@@ -1,0 +1,84 @@
+body {
+    background-color: #222;
+    color: #ccc;
+}
+
+header h1 {
+    font-family: Oswald;
+    font-size: 2em;
+    margin: 20px 0 0 35px;
+    
+}
+
+header h2 {
+    font-family: "Sonsie one";
+    font-size: 1.5em;
+    margin: 15px 0 25px 35px;
+}
+
+main {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 3px;
+}
+
+.box {
+    height: 250px;
+    font-family: "EB Garamond";
+    font-weight: bold;  
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box-header {
+    color: #333;
+    padding: 20px;
+    font-size: 1.2em;
+    background-color: white;
+    border-bottom: 2px dotted #222;
+}
+
+.boats {
+    background-image: url(images/lake.jpg);
+}
+.building {
+    background-image: url(images/empire.jpg);
+}
+.human {
+    background-image: url(images/person.jpg);
+}
+.tree {
+    background-image: url(images/tree.jpg);
+}
+
+.geo {
+    background-image: url(images/geo.jpg);
+}
+
+.sand {
+    background-image: url(images/sand.jpg);
+}
+
+.bridge {
+    background-image: url(images/bridge.jpg);
+}
+
+.lens {
+    background-image: url(images/lens.jpg);
+}
+
+@media only screen and (min-width: 600px) {
+
+main {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 140px 140px 140px;
+}
+
+.box {
+    height: 350px;
+}
+
+}
